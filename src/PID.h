@@ -12,10 +12,23 @@ public:
 
   /*
   * Coefficients
-  */ 
+  */
   double Kp;
   double Ki;
   double Kd;
+
+  /*
+  * Coefficient deltas
+  */
+  double d_Kp;
+  double d_Ki;
+  double d_Kd;
+
+  /*
+  * Helper properties
+  */
+  double prev_cte;
+  double total_cte;
 
   /*
   * Constructor
